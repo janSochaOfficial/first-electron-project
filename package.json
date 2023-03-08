@@ -6,7 +6,7 @@
   "scripts": {
     "build": "rollup -c --bundleConfigAsCjs",
     "dev": "rollup -c -w",
-    "start": "electron-forge start",
+    "start": "rollup -c --bundleConfigAsCjs && electron-forge start",
     "package": "electron-forge package",
     "make": "electron-forge make",
     "dist": "npm run build && electron-forge make"
